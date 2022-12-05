@@ -48,9 +48,10 @@ if(charaBo == "yes"){
         }
 
 }
-//Combine the chosen character types , or use all if none chosen
-var chars = "";
+//Combine the chosen character types
+var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
 if (charaBo == "yes"){
+        chars = "";
         if (charaUpper == "yes"){
         chars = chars + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         }
@@ -67,6 +68,7 @@ if (charaBo == "yes"){
 
 var password=document.getElementById("password");
 
+//generates the password. 
 function passwordGen() {
     var password = "";
  for (var i = 0; i <= passwordLength; i++) {
@@ -76,11 +78,3 @@ function passwordGen() {
         document.getElementById("password").value = password;
         console.log(password)
  }
-
-
-
-function copyPassword() {
-  var copyText = document.getElementById("password");
-  copyText.select();
-  document.execCommand("copy");  
-}
