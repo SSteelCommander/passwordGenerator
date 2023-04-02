@@ -61,7 +61,7 @@ if (charaBo == "yes"){
         if (charaNumber == "yes"){
             chars = chars + "0123456789"
         }
-        if (charaSpecail == "yes"){
+        if (charaSpecial == "yes"){
             chars = chars + "!@#$%^&*()"
         }
     }
